@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "231794946914",
+    "firebase_url": "https://examengrado-52732.firebaseio.com",
+    "project_id": "examengrado-52732",
+    "storage_bucket": "examengrado-52732.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231794946914:android:0ec07c36e878c901dfb23b",
+        "android_client_info": {
+          "package_name": "com.example.examen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231794946914-dkfounee0dlv85qkjkrhrpfv12akr7mh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.examen",
+            "certificate_hash": "27f367e72009f2751d87a9efa59d5bda2d8af7aa"
+          }
+        },
+        {
+          "client_id": "231794946914-nmos80nc5gv3pocms3up9is3phu5q62n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3sgewkDa09_Tkg5CcNoLI50zWnXRVhMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231794946914-nmos80nc5gv3pocms3up9is3phu5q62n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wouterhabets.slidingcontentdrawer.widget.SlidingDrawerLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPelotas"
+
+android:id="@+id/drawer_layout3"
+    android:background="@color/Fondo_Blanco">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cr"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ronaldinho" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="menu">
+
+        <include layout="@layout/drawer_menu"/>
+
+    </FrameLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+
+android:id="@+id/coordinator1"        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:colorBackground"
+        android:elevation="6dp"
+        android:fitsSystemWindows="true"
+        android:tag="content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@android:color/holo_green_light"/>
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:background="@color/Fondo_Blanco"
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="395dp"
+                android:layout_height="222dp"
+
+
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/aa" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="22dp"
+                android:text="BALONES DEPORTIVOS"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="37dp"
+
+                android:layout_marginEnd="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Fondo_Blanco">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/p3"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:src="@drawable/p3" />
+
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView5"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="123dp"
+                            android:layout_toEndOf="@+id/p3"
+
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="203dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="31dp"
+                            android:layout_toEndOf="@+id/p3"
+
+                            android:text="Descripcion" />
+
+                        <TextView
+                            android:id="@+id/precio1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView3"
+
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="9dp"
+                            android:layout_toEndOf="@+id/p3"
+                            android:text="Precio:" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/precio1"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_toEndOf="@+id/p3"
+                            android:text="30bs" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/p1"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:src="@drawable/p1" />
+
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView11"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_toEndOf="@+id/p1"
+
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="203dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="31dp"
+                            android:layout_toEndOf="@+id/p1"
+
+                            android:text="Descripcion" />
+
+                        <TextView
+                            android:id="@+id/precio11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView1"
+
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="9dp"
+                            android:layout_toEndOf="@+id/p1"
+                            android:text="Precio" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/precio11"
+                            android:layout_marginStart="11dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_toEndOf="@+id/p1"
+                            android:text="30bs" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/p4"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:src="@drawable/p6" />
+
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView44"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_toEndOf="@+id/p4"
+
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/textView44"
+                            android:layout_width="203dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="31dp"
+                            android:layout_toEndOf="@+id/p4"
+
+                            android:text="Descripcion" />
+
+                        <TextView
+                            android:id="@+id/precio4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView4"
+
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_toEndOf="@+id/p4"
+                            android:text="Precio:" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/precio4"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_toEndOf="@+id/p4"
+                            android:text="30bs" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/p7"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:src="@drawable/p7" />
+
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView77"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_toEndOf="@+id/p7"
+
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/textView77"
+                            android:layout_width="203dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="31dp"
+                            android:layout_toEndOf="@+id/p7"
+
+                            android:text="Descripcion" />
+
+                        <TextView
+                            android:id="@+id/precio7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView7"
+
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="9dp"
+                            android:layout_toEndOf="@+id/p7"
+                            android:text="Precio:" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/precio7"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_toEndOf="@+id/p7"
+                            android:text="30bs" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/p8"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:src="@drawable/p8" />
+
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView81"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="123dp"
+                            android:layout_toEndOf="@+id/p8"
+
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/textView81"
+                            android:layout_width="203dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="31dp"
+                            android:layout_toEndOf="@+id/p8"
+
+                            android:text="Descripcion" />
+
+                        <TextView
+                            android:id="@+id/precio8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView8"
+
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="9dp"
+                            android:layout_toEndOf="@+id/p8"
+                            android:text="Precio:" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/precio8"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_toEndOf="@+id/p8"
+                            android:text="30bs" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/p9"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:src="@drawable/p9" />
+
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView91"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="123dp"
+                            android:layout_toEndOf="@+id/p9"
+
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/textView91"
+                            android:layout_width="203dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="31dp"
+                            android:layout_toEndOf="@+id/p9"
+
+                            android:text="Descripcion" />
+
+                        <TextView
+                            android:id="@+id/precio9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView9"
+
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="7dp"                            android:layout_toEndOf="@+id/p9"
+                            android:text="Precio:" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/precio9"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="7dp"                            android:layout_toEndOf="@+id/p9"
+                            android:text="30bs" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</com.wouterhabets.slidingcontentdrawer.widget.SlidingDrawerLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wouterhabets.slidingcontentdrawer.widget.SlidingDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:id="@+id/drawer_layoutU"
+    tools:context=".MainUniformes">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cr"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cr" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="menu">
+
+        <include layout="@layout/drawer_menu"/>
+
+    </FrameLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/azul"
+        android:elevation="6dp"
+        android:fitsSystemWindows="true"
+
+        android:tag="content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@android:color/holo_green_light"/>
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <ImageView
+                android:id="@+id/es1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/esatdio2" />
+
+            <ScrollView
+
+                android:id="@+id/scrol1"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/es1"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="2dp">
+
+                <LinearLayout
+                    android:background="@color/azul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/po1"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="17dp"
+                            android:layout_marginBottom="0dp"
+                            android:src="@drawable/aanchesterunited" />
+
+                        <ImageView
+                            android:id="@+id/po2"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="27dp"
+                            android:layout_marginBottom="0dp"
+                            android:src="@drawable/manchester_city" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/po3"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginBottom="0dp"
+                            android:src="@drawable/barca" />
+
+                        <ImageView
+                            android:id="@+id/po4"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="27dp"
+                            android:layout_marginBottom="0dp"
+                            android:src="@drawable/real_madrid" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/po5"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="19dp"                            android:layout_marginBottom="0dp"
+                            android:src="@drawable/borunsian" />
+
+                        <ImageView
+                            android:id="@+id/po6"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+
+
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="27dp"
+                            android:layout_marginBottom="0dp"
+                            android:src="@drawable/bayer" />
+
+                    </RelativeLayout>
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/p09"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="19dp"
+                            android:src="@drawable/bolivar" />
+
+
+                        <ImageView
+                            android:id="@+id/p010"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="27dp"
+                            android:layout_marginBottom="1dp"
+                            android:src="@drawable/strongest" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/p011"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginBottom="2dp"
+                            android:src="@drawable/oriente" />
+
+                        <ImageView
+                            android:id="@+id/p012"
+                            android:layout_width="152dp"
+                            android:layout_height="162dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="27dp"
+                            android:layout_marginBottom="1dp"
+                            android:src="@drawable/bloming" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@android:drawable/ic_dialog_email"/>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</com.wouterhabets.slidingcontentdrawer.widget.SlidingDrawerLayout>
